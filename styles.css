@@ -1,0 +1,82 @@
+.stApp {
+    background: #f7f8fb;
+}
+
+.hero {
+    padding: 24px 28px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #111827, #334155);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: center;
+}
+
+.brand {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.tagline {
+    margin-top: 5px;
+    opacity: 0.82;
+}
+
+.hero-badge {
+    border: 1px solid rgba(255,255,255,.25);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: .85rem;
+    white-space: nowrap;
+}
+
+.product-card, .detail-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, .06);
+}
+
+.product-icon, .detail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    border-radius: 14px;
+    font-size: 4rem;
+    min-height: 150px;
+    margin-bottom: 14px;
+}
+
+.detail-icon {
+    min-height: 280px;
+    font-size: 7rem;
+}
+
+.footer {
+    text-align: center;
+    color: #64748b;
+    font-size: .85rem;
+    padding: 35px 0 10px;
+}
+
+div[data-testid="stMetric"] {
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-badge {
+        white-space: normal;
+    }
+}
